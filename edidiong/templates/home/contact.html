@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edi_Mars&apos; About</title>
+    <link rel="shortcut icon" href="{% static 'assets/images/favicon4.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'public/css/about.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/brand.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/animations.min.css" integrity="sha512-GKHaATMc7acW6/GDGVyBhKV3rST+5rMjokVip0uTikmZHhdqFWC7fGBaq6+lf+DOS5BIO8eK6NcyBYUBCHUBXA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static 'public/css/contact.css' %}">
+    
+</head>
+<body>
+    <div class="contact-container">
+       
+        <section class="">
+            <header id="header">
+                <div class="brand">
+                <img src="{% static 'assets/images/favicon4.ico' %}" alt="myPic">
+                <h3>Edi_Mars&apos;</h3>
+                </div>
+                <div class="header-nav">
+                <a href="{% url 'home' %}" title="Home"><i class="bx bx-home"></i></a>
+                <a href="{% url 'about' %}" title="About"><i class="bx bx-user"></i></a>
+                <a href="{% url 'blog' %}" title="Blog"><i class='bx bxl-blogger' ></i></a> 
+                <a href="{% url 'projects' %}" title="Projects"><i class='bx bx-briefcase'></i></a>
+                </div>
+            </header> 
+            
+            <div class="socials-links">
+                <a href="https://twitter.com/edi_cem24" target="_blank"><i class='bx bxl-twitter'></i></a>
+                <a href="https://github.com/EdiCeM24" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://instagram.com/edi_cem24" target="_blank"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.facebook.com/Edidiong Cletus Marcus" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="https://linkedin.com/in/cletus-marcus" target="_blank"><i class='bx bxl-linkedin-square'></i></a> 
+            </div> 
+        </section>
+
+        <section class="content-body">
+            <h3>Contact <span>Me</span></h3>
+            <div class="my-details">
+                
+                <p>
+                  Your message is important to me, and it will be gratefully accepted if actually the message is sent.
+                  I am assuring you that it will be satisfactorily treated to achieve your most desired
+                  contents.      
+                </p>
+            </div>
+            <div class="hire-point">
+                <a href="{% url 'contact' %}">AVAILABLE FOR HIRE</a>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h3>Your message</h3>
+            <div class="form-control">
+               <form action="" class="form" id="form-input" method="post">
+                 <div class="input-box">
+                    <input type="text" placeholder="John Collyns Markinson">
+                 </div>
+                 <div class="input-box">
+                    <input type="text" placeholder="Username or Nickname">
+                 </div>
+                 <div class="input-box">
+                    <input type="email" placeholder="johncol@gmail.com">
+                 </div>
+                 <div class="input-box">
+                    <input type="text" placeholder="Subject">
+                 </div>
+                 <div class="input-text">
+                    <textarea name="" row="10" id="" placeholder="Message"></textarea>
+                 </div>
+
+                 <button type="submit" id="messageBtn">Send message</button>
+               </form>  
+            </div>
+        </section>
+        
+
+        <footer class="foot">
+            <div class="contact-footer">
+               <p>All rights reserved @ <script>document.write(new Date().getFullYear())</script> &copy; <a href="#" class="foots">Edi_Mars</a></p>
+            </div>
+       </footer>
+    </div>
+    
+    <script src="{% static 'script/js/contact.js' %}"></script>
+</body>
+</html>

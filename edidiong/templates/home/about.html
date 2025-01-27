@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edi_Mars&apos; About</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'public/css/about.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/brand.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/animations.min.css" integrity="sha512-GKHaATMc7acW6/GDGVyBhKV3rST+5rMjokVip0uTikmZHhdqFWC7fGBaq6+lf+DOS5BIO8eK6NcyBYUBCHUBXA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <section class="">
+        <header id="header">
+            <div class="brand">
+              <img src="{% static 'assets/images/favicon4.ico' %}" alt="myPic">
+              <h3>Edi_Mars&apos;</h3>
+            </div>
+            <div class="header-nav">
+              <a href="{% url 'home' %}" title="Home"><i class="bx bx-home"></i></a>
+              <a href="{% url 'blog' %}" title="Blog"><i class='bx bxl-blogger' ></i></a> 
+              <a href="{% url 'contact' %}" title="Contact"><i class='bx bxs-contact'></i></a>
+              <a href="{% url 'projects' %}" title="Projects"><i class="bx bx-briefcase"></i></a>
+            </div>
+         </header> 
+         
+         <div class="socials-links">
+          <a href="https://twitter.com/edi_cem24" target="_blank"><i class='bx bxl-twitter'></i></a>
+          <a href="https://github.com/EdiCeM24" target="_blank"><i class='bx bxl-github'></i></a>
+          <a href="https://instagram.com/edi_cem24" target="_blank"><i class='bx bxl-instagram'></i></a>
+          <a href="https://www.facebook.com/Edidiong Cletus Marcus" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+          <a href="https://linkedin.com/in/cletus-marcus" target="_blank"><i class='bx bxl-linkedin-square'></i></a> 
+      </div> 
+       </section>
+
+    <section class="content-body">
+            <h3>About <span>Me</span></h3>
+        <div class="my-details">
+                
+            <p>
+                Marcus Edidiong Cletus is a full stack software Engineer with a great skills and 
+                experience in software development. I studied Computer Science in Federal Polytechnic Nekede, Owerri,
+                and later advanced for PGD in Federal university of Technology, Owerri which I studied 
+                Software Engineering. I obtained a certificate for frontend and backend web and mobile application development to further strengthen my
+                experience in web and mobile app technology.   
+            </p>
+        </div>
+        <div class="hire-point">
+            <a href="{% url 'contact' %}">AVAILABLE FOR HIRE</a>
+        </div>
+    </section>
+
+        <section class="pictorial-image">
+           <div class="photo-graph">
+              <img src="{% static 'assets/images/myPhoto.jpg' %}" alt="My Pictorial Image">
+           </div>
+
+           <div class="about-content">
+              <h2>Professional Software Engineer from Nigeria</h2>
+
+              <p class="text-pics">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, itaque est a minima molestias quam corrupti dolorum amet perferendis fugit rem numquam quo accusantium? Explicabo!
+              </p>
+              <a href="{% url 'blog' %}" class="btn-about">Read More</a>
+
+              <div class="birth-details">
+                 <ul class="bith-list">
+                    <li><strong>Birthday:</strong> <span>28th February, 1987</span></li>
+                    <li><strong>Website:</strong> <span>www.edimars.com</span></li>
+                    <li><strong>Phone:</strong> <span>+2347026266495, +2348124253772</span></li>
+                    <li><strong>Email:</strong> <span>edimarsxe@gmail.com; cemus24@gmail.com<span></li>
+                    <li><strong>City:</strong> <span>Ika Local Government Area</span></li>
+                    <li><strong>State:</strong> <span>Akwa Ibom</span></li>
+                    <li><strong>Country:</strong> <span>Nigeria</span></li>
+                 </ul>
+              </div>
+              <div class="lancer">
+                <p>
+                    <a href="{% url 'contact' %}">
+                        <strong>Freelance: </strong> <span>Available</span>  
+                    </a>  
+                </p>
+              </div>
+              <div class="cv-btn">
+                <a href="{% static 'assets/images/best_resumes.pdf' %}" download>Download CV</a>
+              </div>
+           </div>
+        </section>
+
+        <section class="faqs">
+            <h3>Frequently Asked Questions</h3>
+            <div class="container faqs__container">
+                <article class="faq">
+                    <div class="faq__icon"><i class="bx bx-plus"></i></div>
+                    <div class="question__answer">
+                       <h4>How do I know the right courses for me?</h4> 
+
+                       <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque placeat numquam accusamus facere maiores ducimus?
+                       </p>
+                    </div>
+                </article>
+                <article class="faq">
+                    <div class="faq__icon"><i class="bx bx-plus"></i></div>
+                    <div class="question__answer">
+                       <h4>How do I know the right courses for me?</h4> 
+
+                       <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque placeat numquam accusamus facere maiores ducimus?
+                       </p>
+                    </div>
+                </article>
+
+                <article class="faq">
+                    <div class="faq__icon"><i class="bx bx-plus"></i></div>
+                    <div class="question__answer">
+                       <h4>How do I know the right courses for me?</h4> 
+
+                       <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque placeat numquam accusamus facere maiores ducimus?
+                       </p>
+                    </div>
+                </article>
+
+                <article class="faq">
+                    <div class="faq__icon"><i class="bx bx-plus"></i></div>
+                    <div class="question__answer">
+                       <h4>How do I know the right courses for me?</h4> 
+
+                       <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque placeat numquam accusamus facere maiores ducimus?
+                       </p>
+                    </div>
+                </article>
+
+                <article class="faq">
+                    <div class="faq__icon"><i class="bx bx-plus"></i></div>
+                    <div class="question__answer">
+                       <h4>How do I know the right courses for me?</h4> 
+
+                       <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque placeat numquam accusamus facere maiores ducimus?
+                       </p>
+                    </div>
+                </article>
+
+                <article class="faq">
+                    <div class="faq__icon"><i class="bx bx-plus"></i></div>
+                    <div class="question__answer">
+                       <h4>How do I know the right courses for me?</h4> 
+
+                       <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque placeat numquam accusamus facere maiores ducimus?
+                       </p>
+                    </div>
+                </article>
+
+                <article class="faq">
+                    <div class="faq__icon"><i class="bx bx-plus"></i></div>
+                    <div class="question__answer">
+                       <h4>How do I know the right courses for me?</h4> 
+
+                       <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque placeat numquam accusamus facere maiores ducimus?
+                       </p>
+                    </div>
+                </article>
+
+                <article class="faq">
+                    <div class="faq__icon"><i class="bx bx-plus"></i></div>
+                    <div class="question__answer">
+                       <h4>How do I know the right courses for me?</h4> 
+
+                       <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque placeat numquam accusamus facere maiores ducimus?
+                       </p>
+                    </div>
+                </article>
+            </div>
+
+        </section>
+        <!--------========== TESTIMONIALS ===========-------->
+        <section class="container testimonies testimonials__container mySwiper">
+            <h2>Testimonials</h2>
+            <p>What they are saying</p>
+            <div class="swiper-wrapper">
+                <article class="testimonial swiper-slide">
+                    <div class="avater">
+                       <img src="../images/edi.png" alt="">  
+                    </div>
+                    <div class="testimonial__info">
+                        <h5>Edidiong Mark</h5>
+                        <small>Developer</small>
+                    </div>
+                    <div class="testimonial__body">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum adipisci voluptate nisi porro natus.</p>
+                    </div>
+                </article>
+                <article class="testimonial swiper-slide">
+                    <div class="avater">
+                       <img src="../images/edi.png" alt="">  
+                    </div>
+                    <div class="testimonial__info">
+                        <h5>Edidiong Mark</h5>
+                        <small>Developer</small>
+                    </div>
+                    <div class="testimonial__body">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum adipisci voluptate nisi porro natus.</p>
+                    </div>
+                </article>
+                <article class="testimonial swiper-slide">
+                    <div class="avater">
+                       <img src="../images/edi.png" alt="">  
+                    </div>
+                    <div class="testimonial__info">
+                        <h5>Edidiong Mark</h5>
+                        <small>Developer</small>
+                    </div>
+                    <div class="testimonial__body">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum adipisci voluptate nisi porro natus.</p>
+                    </div>
+                </article>
+                <article class="testimonial swiper-slide">
+                    <div class="avater">
+                       <img src="../images/edi.png" alt="">  
+                    </div>
+                    <div class="testimonial__info">
+                        <h5>Edidiong Mark</h5>
+                        <small>Developer</small>
+                    </div>
+                    <div class="testimonial__body">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum adipisci voluptate nisi porro natus.</p>
+                    </div>
+                </article>
+                <article class="testimonial swiper-slide">
+                    <div class="avater">
+                       <img src="../images/edi.png" alt="">  
+                    </div>
+                    <div class="testimonial__info">
+                        <h5>Edidiong Mark</h5>
+                        <small>Developer</small>
+                    </div>
+                    <div class="testimonial__body">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum adipisci voluptate nisi porro natus.</p>
+                    </div>
+                </article>
+                <article class="testimonial swiper-slide">
+                    <div class="avater">
+                       <img src="../images/edi.png" alt="">  
+                    </div>
+                    <div class="testimonial__info">
+                        <h5>Edidiong Mark</h5>
+                        <small>Developer</small>
+                    </div>
+                    <div class="testimonial__body">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum adipisci voluptate nisi porro natus.</p>
+                    </div>
+                </article>
+                <article class="testimonial swiper-slide">
+                    <div class="avater">
+                       <img src="../images/edi.png" alt="">  
+                    </div>
+                    <div class="testimonial__info">
+                        <h5>Edidiong Mark</h5>
+                        <small>Developer</small>
+                    </div>
+                    <div class="testimonial__body">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum adipisci voluptate nisi porro natus.</p>
+                    </div>
+                </article>
+                <article class="testimonial swiper-slide">
+                    <div class="avater">
+                       <img src="../images/edi.png" alt="">  
+                    </div>
+                    <div class="testimonial__info">
+                        <h5>Edidiong Mark</h5>
+                        <small>Developer</small>
+                    </div>
+                    <div class="testimonial__body">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum adipisci voluptate nisi porro natus.</p>
+                    </div>
+                </article>
+            </div>
+            <div class="swiper-pagination"></div>
+        </section>
+
+        <footer>
+            <div class="last-footer">
+               <p>All rights reserved @ <script>document.write(new Date().getFullYear())</script> &copy; <a href="#" class="foot">Edi_Mars</a></p>
+            </div>
+       </footer>
+    </div>
+    
+    <script src="{% static 'script/js/about.js' %}"></script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.mySwiper', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      // when window width is >= 600px
+
+      breakpoints: {
+        600: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+      },
+    });
+</script>
+</html>

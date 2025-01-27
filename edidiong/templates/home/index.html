@@ -1,0 +1,49 @@
+{% extends 'main/base.html' %}
+
+{% load static %}
+
+{% block title %}  {% endblock title %}
+
+
+
+{% block content %}
+<div class="hero" id="home">
+    <div class="prof">
+        <div class="prof-container">
+           <img src="{% static 'assets/images/edi.png' %}" alt=""> 
+        </div>
+    </div>
+
+    <div class="info">
+        <div class="info-container">
+            <h1 class="hello">Hello... I am Edidiong</h1>
+            <h1>A frontend <span>Developer</span></h1>
+
+            <div class="text">
+                <p>
+                  Marcus Edidiong Cletus is a full stack software Engineer with a great skills and 
+                  experience in software development. I studied Computer Science in Federal Polytechnic Nekede, Owerri,
+                  and later advanced for PGD in Federal university of Technology, Owerri which I studied 
+                  Software Engineering. I obtained a certificate for frontend and backend web development to further strengthen my
+                  experience in web technology. 
+                </p>
+                <a href="./res/blog.html" class="btn">Read More</a>
+            </div>
+
+            <div class="icons">
+                <a href="https://twitter.com/edi_cem24" target="_blank"><i class='bx bxl-twitter'></i></a>
+                <a href="https://github.com/EdiCeM24" target="_nlank"><i class='bx bxl-github'></i></a>
+                <a href="https://instagram.com/edi_cem24" target="_blank"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.facebook.com/Edidiong Cletus Marcus" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="https://linkedin.com/in/cletus-marcus" target="_nlank"><i class='bx bxl-linkedin-square'></i></a> 
+            </div>
+
+            <div class="sub">
+                <button type="button" onclick="myFunc();">Hire Me</button>
+                <button type="button" onclick="download();">Download CV</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

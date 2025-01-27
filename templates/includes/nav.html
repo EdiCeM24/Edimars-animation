@@ -1,0 +1,33 @@
+
+{% load static %}
+
+<div class="containers">
+    <h3 class="name">Marcus Edidiong Cletus</h3>
+    <div class="content-nav">
+        <a href="{% url 'blog' %}" id="dept">Blog</a>
+        <a href="{% url 'projects' %}" id="dept">Projects</a>
+    </div>
+    <div class="nav">
+        <div class="logo">
+            <img src="{% static 'assets/images/favicon4.ico' %}" alt="">
+            <h1>Edi_Mars</h1>
+        </div>
+        
+        <div class="click"></div>
+
+        <div class="login-item">
+            <a href="{% url 'login' %}">Login</a>
+        </div>
+        
+        <div class="lick-cover"></div>
+        <div class="lick"></div>
+        
+        <ul class="nav-items">
+            <li><a href="{% url 'home' %}" title="Home"><i class="bx bx-home"></i></a></li>
+            <li><a href="{% url 'about' %}" title="About"><i class="bx bx-user"></i></a></li>
+            <li><a href="{% url 'contact' %}" title="Contact"><i class='bx bxs-contact'></i></a></li>
+        </ul>
+        <button type="button" id="open-menu-btn"><i class="uil uil-bars"></i></button>
+
+        <button type="button" id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+    </div>

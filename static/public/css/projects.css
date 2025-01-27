@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    --color-friendly: #b22222;
+    --color-2nd-friendly: #b33333;
+    --color-kamu: #cff2b0;
+    --color-bg: #203040;
+    --color-bg2: #2030;
+    --logo-name: #efd0c2;
+    --color-mango: #f04080;
+    --color-button: #080865;
+    --color-main: #404080;
+    --color-sienna: #a0522d;
+    --color-indignant: #4b0082;
+    
+
+    --shadow-transition: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    --text-shadow: 0px 0px 15px #4b0082;
+     --webkit-text-stroke: 2px #bd3333;
+
+    --transition-mark: 0.3s ease-in-out;
+}
+.window-scroll {
+    background-color: var(--color-bg);
+    box-shadow: var(--shadow-transition);
+}
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-color: var(--color-bg);
+}
+
+/** ===== HEADER SECTION ===== **/
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    height: 15%;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 1;
+}
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 4px;
+}
+.brand h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: transparent;
+    -webkit-text-stroke: var(--webkit-text-stroke);
+    cursor: pointer;
+    text-shadow: var(--text-shadow);
+}
+.brand h3:hover {
+    color: var(--logo-name);
+    transition: var(--shadow-transition);
+}
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 3rem;
+}
+.header-nav a {
+    text-decoration: none;
+    color: var(--color-kamu);
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-shadow: var(--text-shadow);
+}
+.header-nav a:hover {
+    color: var(--color-indignant);
+    transition: var(--transition-mark);
+}
+.socials-links {
+    margin-top: 10%;
+    padding: 5%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30%;
+    gap: 2rem;
+}
+.socials-links a {
+    color: #fff;
+    gap: 2rem;
+    padding: 0rem 1rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.socials-links a:hover {
+    color: wheat;
+    transition: var(--transition-mark);
+}
+/** ===== TEXT SECTION ===== **/
+.project-container {
+    padding: 2rem;
+    max-width: 600px;
+    margin-left: 20%;
+}
+.text-box {
+    display: block;
+    text-align: justify;
+    justify-content: center;
+    line-height: 1.5;
+    color: var(--color-kamu);
+}
+
+/** ===== PROJECTS IMAGE SECTION ===== **/
+.project-head-text h2, span {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 0rem 0.5rem;
+}
+.project-head-text h2 {
+    border-bottom: 2px solid slategray;
+    color: #404080;
+    padding: 0.4rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.project-head-text span {
+    color: aqua;
+}
+.projects-pics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: center;
+    justify-content: center;
+    margin: 0.5rem auto;
+    padding: 2rem 3rem;
+    margin-left: 2.5%;
+    background-color: var(--color-bg2);
+}
+.project-image {
+    background-color: var(--color-bg2);
+    box-shadow: inset var(--shadow-transition);
+    padding: 4rem 3rem 4rem;
+    margin: 1rem auto;
+    border-radius: 10px;
+}
+.projects img {
+    width: 100%;
+    border-radius: 50%;
+    height: 100%;
+}
+.projects img:hover {
+    scale: 2.5%;
+}
+.projects-text-box {
+    display: block;
+    text-align: justify;
+    justify-content: center;
+}
+.projects-text-box button {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: aqua;
+    background-color: var(--color-bg2);
+    margin-top: 1.6rem;
+    margin-left: 20%;
+    cursor: pointer;
+}
+.project-text {
+    border: 2px solid var(--color-indignant);
+    padding: 0.1rem 1rem;
+    margin-top: 15%;
+    border-radius: 10px;
+}
+.project-text:hover {
+    background-color: #faa7b5;
+    transition: var(--transition-mark);
+    opacity: 1;
+}
+.project-text p:hover {
+    color: var(--color-main);
+    transition: var(--transition-mark);
+    opacity: 1;
+}
+.project-text p {
+    color: wheat;
+    
+}
+
+
+
