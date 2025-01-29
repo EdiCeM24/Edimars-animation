@@ -361,6 +361,19 @@ button:hover {
     }
 }
 
+/** ==== NAV_HEADER IN NAV>HTML ===== **/
+.login-item {
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.login-item i {
+     color: #ffffff;
+     font-size: 2rem;
+     font-weight: 600;
+}
+
 
 /** ===== Footer ===== **/
 footer {

@@ -1,3 +1,7 @@
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/animations.min.css" integrity="sha512-GKHaATMc7acW6/GDGVyBhKV3rST+5rMjokVip0uTikmZHhdqFWC7fGBaq6+lf+DOS5BIO8eK6NcyBYUBCHUBXA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/brand.min.css"/>
 
 {% load static %}
 
@@ -14,9 +18,14 @@
         </div>
         
         <div class="click"></div>
-
         <div class="login-item">
-            <a href="{% url 'login' %}">Login</a>
+            {% if user.is_authenticated %}
+            <a href="{% url 'logout' %}" title="Logout"><i class="bx bx-log-out"></i></a>
+            {% else %}
+              <a href="{% url 'login' %}" title="Login"><i class="bx bx-log-in"></i></a>
+
+              <a href="{% url 'signup' %}" title="Sign Up"><i class="bx bx-">Sign Up</i></a>
+           {% endif %}
         </div>
         
         <div class="lick-cover"></div>
