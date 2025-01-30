@@ -60,20 +60,22 @@
             <h3>Your message</h3>
             <div class="form-control">
                <form action="" class="form" id="form-input" method="post">
-                 <div class="input-box">
-                    <input type="text" placeholder="John Collyns Markinson">
+                    {% csrf_token %}
+
+                <div class="input-box">
+                    <input type="text" name="name" placeholder="John Collyns Markinson">
                  </div>
                  <div class="input-box">
-                    <input type="text" placeholder="Username or Nickname">
+                    <input type="text" name="username" placeholder="Username or Nickname">
                  </div>
                  <div class="input-box">
-                    <input type="email" placeholder="johncol@gmail.com">
+                    <input type="email" name="message-email" placeholder="johncol@gmail.com">
                  </div>
                  <div class="input-box">
-                    <input type="text" placeholder="Subject">
+                    <input type="text" name="subject" placeholder="Subject">
                  </div>
                  <div class="input-text">
-                    <textarea name="" row="10" id="" placeholder="Message"></textarea>
+                    <textarea name="message" row="10" id="message" placeholder="Message"></textarea>
                  </div>
 
                  <button type="submit" id="messageBtn">Send message</button>

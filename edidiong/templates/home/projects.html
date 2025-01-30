@@ -139,9 +139,33 @@
 
      <section class="projects-video">
         <h2>Latest <spn>Projects in</spn> <strong>Videos</strong></h2>
-        <video controls muted >
-            <source src="" type="mp4/mpeg"></source>
-        </video>
+        {% for product in videos %}
+            <video controls muted >
+               <source src="{{ product.video.url }}" type="mp4/mpeg"></source>
+            </video>
+            <p>
+              <h3>{{ product.caption }}</h3>
+            </p>
+            <div class="time-text">
+              <h5>{{ point.created_at }}</h5>
+           </div>
+        {% endfor %}
+     </section>
+    
+     <section class="image-box">
+        <h3>Image updates</h3>
+        <div class="image-content">
+          {% for points in project %}
+              <div class="image__stand">
+                <img src="{{ points.image.url }}" alt="">
+                  <p class="text-descript">{{ points.description }}</p>
+
+                  <div class="time-text">
+                     <h5>{{ points.created_at }}</h5>
+                  </div>
+              </div>
+           {% endfor %}
+        </div>
      </section>
 
      <footer class="foot">

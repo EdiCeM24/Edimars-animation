@@ -125,8 +125,26 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# EMAIL BACKENDS
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackends'
+EMAIL_HOST = 'localhost'   # 'smtp.gmail.com'  
+EMAIL_PORT = 1025    # 587
+EMAIL_HOST_USER = 'cemus24@gmail.com'
+EMAIL_HOST_PASSWORD = ''    # 16 character string
+EMAIL_USE_TLS = False    # True
+
+
+
+
+
+

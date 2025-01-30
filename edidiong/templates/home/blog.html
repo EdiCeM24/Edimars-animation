@@ -41,109 +41,43 @@
         </div> 
     </section>
 
-    <section class="project-container">
-        <div class="text-box">
-            <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, molestias fugit? Eveniet, ea dolor? A deserunt rem quo delectus qui iure quidem minus repudiandae vero quod esse, ullam dignissimos beatae! 
-            </p>
-        </div>
-    </section>
-    
-        <div class="project-head-text">
-            <h2>Latest <span>Projects</span></h2>
-        </div>
-    <section class="projects-pics">
-        <div class="project-image">
-            <div class="projects">
-                <img src="{% static 'assets/images/pic-2.png' %}" alt="pic">
-            </div>
-            <article class="projects-text-box">
-                <button type="button">Frontend</button>
-                <div class="project-text">
-                    <p class="">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam, quo volu. 
-                    </p>
-                    <div class=""></div>
-                </div>
-            </article>
-        </div>
-        <div class="project-image">
-            <div class="projects">
-                <img src="{% static 'assets/images/pic.png' %}" alt="pic">
-            </div>
-            <article class="projects-text-box">
-                <button type="button">Backend</button>
-                <div class="project-text">
-                    <p class="">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam, quo volu. 
-                    </p>
-                    <div class=""></div>
-                </div>
-            </article>
-        </div>
-        <div class="project-image">
-            <div class="projects">
-                <img src="{% static 'assets/images/pi-1.jpg' %}" alt="pic">
-            </div>
-            <article class="projects-text-box">
-                <button type="button">Graphic Design</button>
-                <div class="project-text">
-                    <p class="">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam, quo volu. 
-                    </p>
-                    <div class=""></div>
-                </div>
-            </article>
-        </div>
-        <div class="project-image">
-            <div class="projects">
-                <img src="{% static 'assets/images/pic-3.png' %}" alt="pic">
-            </div>
-            <article class="projects-text-box">
-                <button type="button">Mobile Application</button>
-                <div class="project-text">
-                    <p class="">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam, quo volu. 
-                    </p>
-                    <div class=""></div>
-                </div>
-            </article>
-        </div>
-        <div class="project-image">
-            <div class="projects">
-                <img src="{% static 'assets/images/pi-2.jpg' %}" alt="pic">
-            </div>
-            <article class="projects-text-box">
-                <button type="button">Web Design</button>
-                <div class="project-text">
-                    <p class="">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam, quo volu. 
-                    </p>
-                    <div class=""></div>
-                </div>
-            </article>
-        </div>
-        <div class="project-image">
-            <div class="projects">
-                <img src="{% static 'assets./images/edi.png' %}" alt="pic">
-            </div>
-            <article class="projects-text-box">
-                <button type="button">Machine Learning</button>
-                <div class="project-text">
-                    <p class="">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam, quo volu. 
-                    </p>
-                    <div class=""></div>
-                </div>
-            </article>
+    <section class="blog-contents">
+        <div class="">
+            {% for product in blog_video %}
+               <div class="">
+                <div class="">
+                    <h4>{{ product.caption }}</h4>
+                 </div>
+                 <video src="" controls autoplay>
+                    <source media="(min-width: )" src="{{ product.video.url }}">
+                 </video>
+                 <div class="">
+                    <p>{{ product.description }}</p>
+                    <span>{{ product.created_at }}</span>
+                 </div>
+               </div>
+            {% endfor %}
         </div>
     </section>
 
-    <section class="projects-video">
-        <h2>Latest <spn>Projects in</spn> <strong>Videos</strong></h2>
-        <video controls muted >
-            <source src="" type="mp4/mpeg"></source>
-        </video>
+
+    <section class="blog-container">
+        <div class="blog-image">
+            {% for products in blogs %}
+               <div class="">
+                <div class="">
+                    <h4>{{ products.title }}</h4>
+                 </div>
+                    <div class="image">
+                        <img src="{{ products.image_url.url}}" alt="">
+                    </div>
+                 <div class="">
+                    <p>{{ products.text }}</p>
+                    <span>{{ products.created_at }}</span>
+                 </div>
+               </div>
+            {% endfor %}
+        </div>
     </section>
 
     <footer class="foot">
